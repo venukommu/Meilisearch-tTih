@@ -1,15 +1,16 @@
+---
 application:
-  name: meilisearch
-  project: CHANGEME
-  organization: CHANGEME
+  name: "meilisearch"
+  project: "MeiliSearch"
+  organization: "QoveryCommunity"
   storage:
-  - name: meili-data
-    type: ssd
-    size: 10GB
-    mount_point: /data.ms
+  - name: "meili-data"
+    size: "10GB"
+    type: "ssd"
+    mount_point: "/data.ms"
 routers:
-- name: meili-router
+- name: "meili-router"
   routes:
-  - application_name: meilisearch
+  - application_name: "meilisearch"
     paths:
     - "/"
